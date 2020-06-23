@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "index": "/remaxVendors/npm/_vant/weapp/lib/button/index"
+  }
+}
