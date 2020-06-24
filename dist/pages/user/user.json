@@ -1,5 +1,8 @@
 {
   "usingComponents": {
-    "index": "/remaxVendors/npm/_vant/weapp/lib/button/index"
+    "index": "/remaxVendors/npm/_vant/weapp/lib/cell-group/index",
+    "index0": "/remaxVendors/npm/_vant/weapp/lib/cell/index",
+    "index1": "/remaxVendors/npm/_vant/weapp/lib/grid/index",
+    "index2": "/remaxVendors/npm/_vant/weapp/lib/grid-item/index"
   }
 }

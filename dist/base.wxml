@@ -648,6 +648,7 @@ style="{{_h.v(i.props['style'])}}">
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
+          class="{{i.nodes[item].props['class']}}" 
         >
           <block wx:for="{{i.nodes[item].children}}" wx:key="*this" wx:for-item="sItem">
             <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item].nodes[sItem], a: a, tid: tid + 1 }}" />
@@ -667,6 +668,7 @@ style="{{_h.v(i.props['style'])}}">
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
+          class="{{i.nodes[item].props['class']}}" 
         >
           <block wx:for="{{i.nodes[item].children}}" wx:key="*this" wx:for-item="sItem">
             <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item].nodes[sItem], a: a, tid: tid + 1 }}" />
@@ -686,6 +688,7 @@ style="{{_h.v(i.props['style'])}}">
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
+          class="{{i.nodes[item].props['class']}}" 
         >
           <block wx:for="{{i.nodes[item].children}}" wx:key="*this" wx:for-item="sItem">
             <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item].nodes[sItem], a: a, tid: tid + 1 }}" />
@@ -705,6 +708,7 @@ style="{{_h.v(i.props['style'])}}">
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
+          class="{{i.nodes[item].props['class']}}" 
         >
           <block wx:for="{{i.nodes[item].children}}" wx:key="*this" wx:for-item="sItem">
             <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item].nodes[sItem], a: a, tid: tid + 1 }}" />
@@ -724,6 +728,7 @@ style="{{_h.v(i.props['style'])}}">
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
+          class="{{i.nodes[item].props['class']}}" 
         >
           <block wx:for="{{i.nodes[item].children}}" wx:key="*this" wx:for-item="sItem">
             <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item].nodes[sItem], a: a, tid: tid + 1 }}" />
@@ -743,6 +748,7 @@ style="{{_h.v(i.props['style'])}}">
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
+          class="{{i.nodes[item].props['class']}}" 
         >
           <block wx:for="{{i.nodes[item].children}}" wx:key="*this" wx:for-item="sItem">
             <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item].nodes[sItem], a: a, tid: tid + 1 }}" />
@@ -762,6 +768,7 @@ style="{{_h.v(i.props['style'])}}">
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
+          class="{{i.nodes[item].props['class']}}" 
         >
           <block wx:for="{{i.nodes[item].children}}" wx:key="*this" wx:for-item="sItem">
             <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item].nodes[sItem], a: a, tid: tid + 1 }}" />
@@ -781,6 +788,7 @@ style="{{_h.v(i.props['style'])}}">
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
+          class="{{i.nodes[item].props['class']}}" 
         >
           <block wx:for="{{i.nodes[item].children}}" wx:key="*this" wx:for-item="sItem">
             <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item].nodes[sItem], a: a, tid: tid + 1 }}" />
@@ -800,6 +808,7 @@ style="{{_h.v(i.props['style'])}}">
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
+          class="{{i.nodes[item].props['class']}}" 
         >
           <block wx:for="{{i.nodes[item].children}}" wx:key="*this" wx:for-item="sItem">
             <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item].nodes[sItem], a: a, tid: tid + 1 }}" />
@@ -819,6 +828,7 @@ style="{{_h.v(i.props['style'])}}">
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
+          class="{{i.nodes[item].props['class']}}" 
         >
           <block wx:for="{{i.nodes[item].children}}" wx:key="*this" wx:for-item="sItem">
             <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item].nodes[sItem], a: a, tid: tid + 1 }}" />
@@ -830,6 +840,696 @@ style="{{_h.v(i.props['style'])}}">
       </block>
     </block>
   </index>
+</template>
+
+		<template name="REMAX_TPL_1_index0">
+  <index0
+    center="{{_h.v(i.props['center'])}}"
+icon="{{_h.v(i.props['icon'])}}"
+is-link="{{_h.v(i.props['is-link'])}}"
+title="{{_h.v(i.props['title'])}}"
+value="{{_h.v(i.props['value'])}}">
+    <block wx:for="{{i.children}}" wx:key="*this">
+      <block wx:if="{{i.nodes[item].props['slot']}}">
+        <view slot="{{i.nodes[item].props['slot']}}" 
+          class="{{i.nodes[item].props['class']}}" 
+        >
+          <block wx:for="{{i.nodes[item].children}}" wx:key="*this" wx:for-item="sItem">
+            <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item].nodes[sItem], a: a, tid: tid + 1 }}" />
+          </block>
+        </view>
+      </block>
+      <block wx:else>
+        <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item], a: a, tid: tid + 1 }}" />
+      </block>
+    </block>
+  </index0>
+</template>
+
+		<template name="REMAX_TPL_2_index0">
+  <index0
+    center="{{_h.v(i.props['center'])}}"
+icon="{{_h.v(i.props['icon'])}}"
+is-link="{{_h.v(i.props['is-link'])}}"
+title="{{_h.v(i.props['title'])}}"
+value="{{_h.v(i.props['value'])}}">
+    <block wx:for="{{i.children}}" wx:key="*this">
+      <block wx:if="{{i.nodes[item].props['slot']}}">
+        <view slot="{{i.nodes[item].props['slot']}}" 
+          class="{{i.nodes[item].props['class']}}" 
+        >
+          <block wx:for="{{i.nodes[item].children}}" wx:key="*this" wx:for-item="sItem">
+            <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item].nodes[sItem], a: a, tid: tid + 1 }}" />
+          </block>
+        </view>
+      </block>
+      <block wx:else>
+        <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item], a: a, tid: tid + 1 }}" />
+      </block>
+    </block>
+  </index0>
+</template>
+
+		<template name="REMAX_TPL_3_index0">
+  <index0
+    center="{{_h.v(i.props['center'])}}"
+icon="{{_h.v(i.props['icon'])}}"
+is-link="{{_h.v(i.props['is-link'])}}"
+title="{{_h.v(i.props['title'])}}"
+value="{{_h.v(i.props['value'])}}">
+    <block wx:for="{{i.children}}" wx:key="*this">
+      <block wx:if="{{i.nodes[item].props['slot']}}">
+        <view slot="{{i.nodes[item].props['slot']}}" 
+          class="{{i.nodes[item].props['class']}}" 
+        >
+          <block wx:for="{{i.nodes[item].children}}" wx:key="*this" wx:for-item="sItem">
+            <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item].nodes[sItem], a: a, tid: tid + 1 }}" />
+          </block>
+        </view>
+      </block>
+      <block wx:else>
+        <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item], a: a, tid: tid + 1 }}" />
+      </block>
+    </block>
+  </index0>
+</template>
+
+		<template name="REMAX_TPL_4_index0">
+  <index0
+    center="{{_h.v(i.props['center'])}}"
+icon="{{_h.v(i.props['icon'])}}"
+is-link="{{_h.v(i.props['is-link'])}}"
+title="{{_h.v(i.props['title'])}}"
+value="{{_h.v(i.props['value'])}}">
+    <block wx:for="{{i.children}}" wx:key="*this">
+      <block wx:if="{{i.nodes[item].props['slot']}}">
+        <view slot="{{i.nodes[item].props['slot']}}" 
+          class="{{i.nodes[item].props['class']}}" 
+        >
+          <block wx:for="{{i.nodes[item].children}}" wx:key="*this" wx:for-item="sItem">
+            <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item].nodes[sItem], a: a, tid: tid + 1 }}" />
+          </block>
+        </view>
+      </block>
+      <block wx:else>
+        <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item], a: a, tid: tid + 1 }}" />
+      </block>
+    </block>
+  </index0>
+</template>
+
+		<template name="REMAX_TPL_5_index0">
+  <index0
+    center="{{_h.v(i.props['center'])}}"
+icon="{{_h.v(i.props['icon'])}}"
+is-link="{{_h.v(i.props['is-link'])}}"
+title="{{_h.v(i.props['title'])}}"
+value="{{_h.v(i.props['value'])}}">
+    <block wx:for="{{i.children}}" wx:key="*this">
+      <block wx:if="{{i.nodes[item].props['slot']}}">
+        <view slot="{{i.nodes[item].props['slot']}}" 
+          class="{{i.nodes[item].props['class']}}" 
+        >
+          <block wx:for="{{i.nodes[item].children}}" wx:key="*this" wx:for-item="sItem">
+            <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item].nodes[sItem], a: a, tid: tid + 1 }}" />
+          </block>
+        </view>
+      </block>
+      <block wx:else>
+        <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item], a: a, tid: tid + 1 }}" />
+      </block>
+    </block>
+  </index0>
+</template>
+
+		<template name="REMAX_TPL_6_index0">
+  <index0
+    center="{{_h.v(i.props['center'])}}"
+icon="{{_h.v(i.props['icon'])}}"
+is-link="{{_h.v(i.props['is-link'])}}"
+title="{{_h.v(i.props['title'])}}"
+value="{{_h.v(i.props['value'])}}">
+    <block wx:for="{{i.children}}" wx:key="*this">
+      <block wx:if="{{i.nodes[item].props['slot']}}">
+        <view slot="{{i.nodes[item].props['slot']}}" 
+          class="{{i.nodes[item].props['class']}}" 
+        >
+          <block wx:for="{{i.nodes[item].children}}" wx:key="*this" wx:for-item="sItem">
+            <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item].nodes[sItem], a: a, tid: tid + 1 }}" />
+          </block>
+        </view>
+      </block>
+      <block wx:else>
+        <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item], a: a, tid: tid + 1 }}" />
+      </block>
+    </block>
+  </index0>
+</template>
+
+		<template name="REMAX_TPL_7_index0">
+  <index0
+    center="{{_h.v(i.props['center'])}}"
+icon="{{_h.v(i.props['icon'])}}"
+is-link="{{_h.v(i.props['is-link'])}}"
+title="{{_h.v(i.props['title'])}}"
+value="{{_h.v(i.props['value'])}}">
+    <block wx:for="{{i.children}}" wx:key="*this">
+      <block wx:if="{{i.nodes[item].props['slot']}}">
+        <view slot="{{i.nodes[item].props['slot']}}" 
+          class="{{i.nodes[item].props['class']}}" 
+        >
+          <block wx:for="{{i.nodes[item].children}}" wx:key="*this" wx:for-item="sItem">
+            <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item].nodes[sItem], a: a, tid: tid + 1 }}" />
+          </block>
+        </view>
+      </block>
+      <block wx:else>
+        <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item], a: a, tid: tid + 1 }}" />
+      </block>
+    </block>
+  </index0>
+</template>
+
+		<template name="REMAX_TPL_8_index0">
+  <index0
+    center="{{_h.v(i.props['center'])}}"
+icon="{{_h.v(i.props['icon'])}}"
+is-link="{{_h.v(i.props['is-link'])}}"
+title="{{_h.v(i.props['title'])}}"
+value="{{_h.v(i.props['value'])}}">
+    <block wx:for="{{i.children}}" wx:key="*this">
+      <block wx:if="{{i.nodes[item].props['slot']}}">
+        <view slot="{{i.nodes[item].props['slot']}}" 
+          class="{{i.nodes[item].props['class']}}" 
+        >
+          <block wx:for="{{i.nodes[item].children}}" wx:key="*this" wx:for-item="sItem">
+            <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item].nodes[sItem], a: a, tid: tid + 1 }}" />
+          </block>
+        </view>
+      </block>
+      <block wx:else>
+        <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item], a: a, tid: tid + 1 }}" />
+      </block>
+    </block>
+  </index0>
+</template>
+
+		<template name="REMAX_TPL_9_index0">
+  <index0
+    center="{{_h.v(i.props['center'])}}"
+icon="{{_h.v(i.props['icon'])}}"
+is-link="{{_h.v(i.props['is-link'])}}"
+title="{{_h.v(i.props['title'])}}"
+value="{{_h.v(i.props['value'])}}">
+    <block wx:for="{{i.children}}" wx:key="*this">
+      <block wx:if="{{i.nodes[item].props['slot']}}">
+        <view slot="{{i.nodes[item].props['slot']}}" 
+          class="{{i.nodes[item].props['class']}}" 
+        >
+          <block wx:for="{{i.nodes[item].children}}" wx:key="*this" wx:for-item="sItem">
+            <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item].nodes[sItem], a: a, tid: tid + 1 }}" />
+          </block>
+        </view>
+      </block>
+      <block wx:else>
+        <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item], a: a, tid: tid + 1 }}" />
+      </block>
+    </block>
+  </index0>
+</template>
+
+		<template name="REMAX_TPL_10_index0">
+  <index0
+    center="{{_h.v(i.props['center'])}}"
+icon="{{_h.v(i.props['icon'])}}"
+is-link="{{_h.v(i.props['is-link'])}}"
+title="{{_h.v(i.props['title'])}}"
+value="{{_h.v(i.props['value'])}}">
+    <block wx:for="{{i.children}}" wx:key="*this">
+      <block wx:if="{{i.nodes[item].props['slot']}}">
+        <view slot="{{i.nodes[item].props['slot']}}" 
+          class="{{i.nodes[item].props['class']}}" 
+        >
+          <block wx:for="{{i.nodes[item].children}}" wx:key="*this" wx:for-item="sItem">
+            <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item].nodes[sItem], a: a, tid: tid + 1 }}" />
+          </block>
+        </view>
+      </block>
+      <block wx:else>
+        <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item], a: a, tid: tid + 1 }}" />
+      </block>
+    </block>
+  </index0>
+</template>
+
+		<template name="REMAX_TPL_1_index1">
+  <index1
+    clickable="{{_h.v(i.props['clickable'])}}">
+    <block wx:for="{{i.children}}" wx:key="*this">
+      <block wx:if="{{i.nodes[item].props['slot']}}">
+        <view slot="{{i.nodes[item].props['slot']}}" 
+          class="{{i.nodes[item].props['class']}}" 
+        >
+          <block wx:for="{{i.nodes[item].children}}" wx:key="*this" wx:for-item="sItem">
+            <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item].nodes[sItem], a: a, tid: tid + 1 }}" />
+          </block>
+        </view>
+      </block>
+      <block wx:else>
+        <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item], a: a, tid: tid + 1 }}" />
+      </block>
+    </block>
+  </index1>
+</template>
+
+		<template name="REMAX_TPL_2_index1">
+  <index1
+    clickable="{{_h.v(i.props['clickable'])}}">
+    <block wx:for="{{i.children}}" wx:key="*this">
+      <block wx:if="{{i.nodes[item].props['slot']}}">
+        <view slot="{{i.nodes[item].props['slot']}}" 
+          class="{{i.nodes[item].props['class']}}" 
+        >
+          <block wx:for="{{i.nodes[item].children}}" wx:key="*this" wx:for-item="sItem">
+            <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item].nodes[sItem], a: a, tid: tid + 1 }}" />
+          </block>
+        </view>
+      </block>
+      <block wx:else>
+        <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item], a: a, tid: tid + 1 }}" />
+      </block>
+    </block>
+  </index1>
+</template>
+
+		<template name="REMAX_TPL_3_index1">
+  <index1
+    clickable="{{_h.v(i.props['clickable'])}}">
+    <block wx:for="{{i.children}}" wx:key="*this">
+      <block wx:if="{{i.nodes[item].props['slot']}}">
+        <view slot="{{i.nodes[item].props['slot']}}" 
+          class="{{i.nodes[item].props['class']}}" 
+        >
+          <block wx:for="{{i.nodes[item].children}}" wx:key="*this" wx:for-item="sItem">
+            <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item].nodes[sItem], a: a, tid: tid + 1 }}" />
+          </block>
+        </view>
+      </block>
+      <block wx:else>
+        <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item], a: a, tid: tid + 1 }}" />
+      </block>
+    </block>
+  </index1>
+</template>
+
+		<template name="REMAX_TPL_4_index1">
+  <index1
+    clickable="{{_h.v(i.props['clickable'])}}">
+    <block wx:for="{{i.children}}" wx:key="*this">
+      <block wx:if="{{i.nodes[item].props['slot']}}">
+        <view slot="{{i.nodes[item].props['slot']}}" 
+          class="{{i.nodes[item].props['class']}}" 
+        >
+          <block wx:for="{{i.nodes[item].children}}" wx:key="*this" wx:for-item="sItem">
+            <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item].nodes[sItem], a: a, tid: tid + 1 }}" />
+          </block>
+        </view>
+      </block>
+      <block wx:else>
+        <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item], a: a, tid: tid + 1 }}" />
+      </block>
+    </block>
+  </index1>
+</template>
+
+		<template name="REMAX_TPL_5_index1">
+  <index1
+    clickable="{{_h.v(i.props['clickable'])}}">
+    <block wx:for="{{i.children}}" wx:key="*this">
+      <block wx:if="{{i.nodes[item].props['slot']}}">
+        <view slot="{{i.nodes[item].props['slot']}}" 
+          class="{{i.nodes[item].props['class']}}" 
+        >
+          <block wx:for="{{i.nodes[item].children}}" wx:key="*this" wx:for-item="sItem">
+            <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item].nodes[sItem], a: a, tid: tid + 1 }}" />
+          </block>
+        </view>
+      </block>
+      <block wx:else>
+        <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item], a: a, tid: tid + 1 }}" />
+      </block>
+    </block>
+  </index1>
+</template>
+
+		<template name="REMAX_TPL_6_index1">
+  <index1
+    clickable="{{_h.v(i.props['clickable'])}}">
+    <block wx:for="{{i.children}}" wx:key="*this">
+      <block wx:if="{{i.nodes[item].props['slot']}}">
+        <view slot="{{i.nodes[item].props['slot']}}" 
+          class="{{i.nodes[item].props['class']}}" 
+        >
+          <block wx:for="{{i.nodes[item].children}}" wx:key="*this" wx:for-item="sItem">
+            <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item].nodes[sItem], a: a, tid: tid + 1 }}" />
+          </block>
+        </view>
+      </block>
+      <block wx:else>
+        <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item], a: a, tid: tid + 1 }}" />
+      </block>
+    </block>
+  </index1>
+</template>
+
+		<template name="REMAX_TPL_7_index1">
+  <index1
+    clickable="{{_h.v(i.props['clickable'])}}">
+    <block wx:for="{{i.children}}" wx:key="*this">
+      <block wx:if="{{i.nodes[item].props['slot']}}">
+        <view slot="{{i.nodes[item].props['slot']}}" 
+          class="{{i.nodes[item].props['class']}}" 
+        >
+          <block wx:for="{{i.nodes[item].children}}" wx:key="*this" wx:for-item="sItem">
+            <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item].nodes[sItem], a: a, tid: tid + 1 }}" />
+          </block>
+        </view>
+      </block>
+      <block wx:else>
+        <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item], a: a, tid: tid + 1 }}" />
+      </block>
+    </block>
+  </index1>
+</template>
+
+		<template name="REMAX_TPL_8_index1">
+  <index1
+    clickable="{{_h.v(i.props['clickable'])}}">
+    <block wx:for="{{i.children}}" wx:key="*this">
+      <block wx:if="{{i.nodes[item].props['slot']}}">
+        <view slot="{{i.nodes[item].props['slot']}}" 
+          class="{{i.nodes[item].props['class']}}" 
+        >
+          <block wx:for="{{i.nodes[item].children}}" wx:key="*this" wx:for-item="sItem">
+            <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item].nodes[sItem], a: a, tid: tid + 1 }}" />
+          </block>
+        </view>
+      </block>
+      <block wx:else>
+        <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item], a: a, tid: tid + 1 }}" />
+      </block>
+    </block>
+  </index1>
+</template>
+
+		<template name="REMAX_TPL_9_index1">
+  <index1
+    clickable="{{_h.v(i.props['clickable'])}}">
+    <block wx:for="{{i.children}}" wx:key="*this">
+      <block wx:if="{{i.nodes[item].props['slot']}}">
+        <view slot="{{i.nodes[item].props['slot']}}" 
+          class="{{i.nodes[item].props['class']}}" 
+        >
+          <block wx:for="{{i.nodes[item].children}}" wx:key="*this" wx:for-item="sItem">
+            <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item].nodes[sItem], a: a, tid: tid + 1 }}" />
+          </block>
+        </view>
+      </block>
+      <block wx:else>
+        <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item], a: a, tid: tid + 1 }}" />
+      </block>
+    </block>
+  </index1>
+</template>
+
+		<template name="REMAX_TPL_10_index1">
+  <index1
+    clickable="{{_h.v(i.props['clickable'])}}">
+    <block wx:for="{{i.children}}" wx:key="*this">
+      <block wx:if="{{i.nodes[item].props['slot']}}">
+        <view slot="{{i.nodes[item].props['slot']}}" 
+          class="{{i.nodes[item].props['class']}}" 
+        >
+          <block wx:for="{{i.nodes[item].children}}" wx:key="*this" wx:for-item="sItem">
+            <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item].nodes[sItem], a: a, tid: tid + 1 }}" />
+          </block>
+        </view>
+      </block>
+      <block wx:else>
+        <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item], a: a, tid: tid + 1 }}" />
+      </block>
+    </block>
+  </index1>
+</template>
+
+		<template name="REMAX_TPL_1_index2">
+  <index2
+    badge="{{_h.v(i.props['badge'])}}"
+icon="{{_h.v(i.props['icon'])}}"
+key="{{_h.v(i.props['key'])}}"
+onclick="{{_h.v(i.props['onclick'])}}"
+square="{{_h.v(i.props['square'])}}"
+text="{{_h.v(i.props['text'])}}">
+    <block wx:for="{{i.children}}" wx:key="*this">
+      <block wx:if="{{i.nodes[item].props['slot']}}">
+        <view slot="{{i.nodes[item].props['slot']}}" 
+          class="{{i.nodes[item].props['class']}}" 
+        >
+          <block wx:for="{{i.nodes[item].children}}" wx:key="*this" wx:for-item="sItem">
+            <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item].nodes[sItem], a: a, tid: tid + 1 }}" />
+          </block>
+        </view>
+      </block>
+      <block wx:else>
+        <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item], a: a, tid: tid + 1 }}" />
+      </block>
+    </block>
+  </index2>
+</template>
+
+		<template name="REMAX_TPL_2_index2">
+  <index2
+    badge="{{_h.v(i.props['badge'])}}"
+icon="{{_h.v(i.props['icon'])}}"
+key="{{_h.v(i.props['key'])}}"
+onclick="{{_h.v(i.props['onclick'])}}"
+square="{{_h.v(i.props['square'])}}"
+text="{{_h.v(i.props['text'])}}">
+    <block wx:for="{{i.children}}" wx:key="*this">
+      <block wx:if="{{i.nodes[item].props['slot']}}">
+        <view slot="{{i.nodes[item].props['slot']}}" 
+          class="{{i.nodes[item].props['class']}}" 
+        >
+          <block wx:for="{{i.nodes[item].children}}" wx:key="*this" wx:for-item="sItem">
+            <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item].nodes[sItem], a: a, tid: tid + 1 }}" />
+          </block>
+        </view>
+      </block>
+      <block wx:else>
+        <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item], a: a, tid: tid + 1 }}" />
+      </block>
+    </block>
+  </index2>
+</template>
+
+		<template name="REMAX_TPL_3_index2">
+  <index2
+    badge="{{_h.v(i.props['badge'])}}"
+icon="{{_h.v(i.props['icon'])}}"
+key="{{_h.v(i.props['key'])}}"
+onclick="{{_h.v(i.props['onclick'])}}"
+square="{{_h.v(i.props['square'])}}"
+text="{{_h.v(i.props['text'])}}">
+    <block wx:for="{{i.children}}" wx:key="*this">
+      <block wx:if="{{i.nodes[item].props['slot']}}">
+        <view slot="{{i.nodes[item].props['slot']}}" 
+          class="{{i.nodes[item].props['class']}}" 
+        >
+          <block wx:for="{{i.nodes[item].children}}" wx:key="*this" wx:for-item="sItem">
+            <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item].nodes[sItem], a: a, tid: tid + 1 }}" />
+          </block>
+        </view>
+      </block>
+      <block wx:else>
+        <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item], a: a, tid: tid + 1 }}" />
+      </block>
+    </block>
+  </index2>
+</template>
+
+		<template name="REMAX_TPL_4_index2">
+  <index2
+    badge="{{_h.v(i.props['badge'])}}"
+icon="{{_h.v(i.props['icon'])}}"
+key="{{_h.v(i.props['key'])}}"
+onclick="{{_h.v(i.props['onclick'])}}"
+square="{{_h.v(i.props['square'])}}"
+text="{{_h.v(i.props['text'])}}">
+    <block wx:for="{{i.children}}" wx:key="*this">
+      <block wx:if="{{i.nodes[item].props['slot']}}">
+        <view slot="{{i.nodes[item].props['slot']}}" 
+          class="{{i.nodes[item].props['class']}}" 
+        >
+          <block wx:for="{{i.nodes[item].children}}" wx:key="*this" wx:for-item="sItem">
+            <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item].nodes[sItem], a: a, tid: tid + 1 }}" />
+          </block>
+        </view>
+      </block>
+      <block wx:else>
+        <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item], a: a, tid: tid + 1 }}" />
+      </block>
+    </block>
+  </index2>
+</template>
+
+		<template name="REMAX_TPL_5_index2">
+  <index2
+    badge="{{_h.v(i.props['badge'])}}"
+icon="{{_h.v(i.props['icon'])}}"
+key="{{_h.v(i.props['key'])}}"
+onclick="{{_h.v(i.props['onclick'])}}"
+square="{{_h.v(i.props['square'])}}"
+text="{{_h.v(i.props['text'])}}">
+    <block wx:for="{{i.children}}" wx:key="*this">
+      <block wx:if="{{i.nodes[item].props['slot']}}">
+        <view slot="{{i.nodes[item].props['slot']}}" 
+          class="{{i.nodes[item].props['class']}}" 
+        >
+          <block wx:for="{{i.nodes[item].children}}" wx:key="*this" wx:for-item="sItem">
+            <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item].nodes[sItem], a: a, tid: tid + 1 }}" />
+          </block>
+        </view>
+      </block>
+      <block wx:else>
+        <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item], a: a, tid: tid + 1 }}" />
+      </block>
+    </block>
+  </index2>
+</template>
+
+		<template name="REMAX_TPL_6_index2">
+  <index2
+    badge="{{_h.v(i.props['badge'])}}"
+icon="{{_h.v(i.props['icon'])}}"
+key="{{_h.v(i.props['key'])}}"
+onclick="{{_h.v(i.props['onclick'])}}"
+square="{{_h.v(i.props['square'])}}"
+text="{{_h.v(i.props['text'])}}">
+    <block wx:for="{{i.children}}" wx:key="*this">
+      <block wx:if="{{i.nodes[item].props['slot']}}">
+        <view slot="{{i.nodes[item].props['slot']}}" 
+          class="{{i.nodes[item].props['class']}}" 
+        >
+          <block wx:for="{{i.nodes[item].children}}" wx:key="*this" wx:for-item="sItem">
+            <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item].nodes[sItem], a: a, tid: tid + 1 }}" />
+          </block>
+        </view>
+      </block>
+      <block wx:else>
+        <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item], a: a, tid: tid + 1 }}" />
+      </block>
+    </block>
+  </index2>
+</template>
+
+		<template name="REMAX_TPL_7_index2">
+  <index2
+    badge="{{_h.v(i.props['badge'])}}"
+icon="{{_h.v(i.props['icon'])}}"
+key="{{_h.v(i.props['key'])}}"
+onclick="{{_h.v(i.props['onclick'])}}"
+square="{{_h.v(i.props['square'])}}"
+text="{{_h.v(i.props['text'])}}">
+    <block wx:for="{{i.children}}" wx:key="*this">
+      <block wx:if="{{i.nodes[item].props['slot']}}">
+        <view slot="{{i.nodes[item].props['slot']}}" 
+          class="{{i.nodes[item].props['class']}}" 
+        >
+          <block wx:for="{{i.nodes[item].children}}" wx:key="*this" wx:for-item="sItem">
+            <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item].nodes[sItem], a: a, tid: tid + 1 }}" />
+          </block>
+        </view>
+      </block>
+      <block wx:else>
+        <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item], a: a, tid: tid + 1 }}" />
+      </block>
+    </block>
+  </index2>
+</template>
+
+		<template name="REMAX_TPL_8_index2">
+  <index2
+    badge="{{_h.v(i.props['badge'])}}"
+icon="{{_h.v(i.props['icon'])}}"
+key="{{_h.v(i.props['key'])}}"
+onclick="{{_h.v(i.props['onclick'])}}"
+square="{{_h.v(i.props['square'])}}"
+text="{{_h.v(i.props['text'])}}">
+    <block wx:for="{{i.children}}" wx:key="*this">
+      <block wx:if="{{i.nodes[item].props['slot']}}">
+        <view slot="{{i.nodes[item].props['slot']}}" 
+          class="{{i.nodes[item].props['class']}}" 
+        >
+          <block wx:for="{{i.nodes[item].children}}" wx:key="*this" wx:for-item="sItem">
+            <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item].nodes[sItem], a: a, tid: tid + 1 }}" />
+          </block>
+        </view>
+      </block>
+      <block wx:else>
+        <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item], a: a, tid: tid + 1 }}" />
+      </block>
+    </block>
+  </index2>
+</template>
+
+		<template name="REMAX_TPL_9_index2">
+  <index2
+    badge="{{_h.v(i.props['badge'])}}"
+icon="{{_h.v(i.props['icon'])}}"
+key="{{_h.v(i.props['key'])}}"
+onclick="{{_h.v(i.props['onclick'])}}"
+square="{{_h.v(i.props['square'])}}"
+text="{{_h.v(i.props['text'])}}">
+    <block wx:for="{{i.children}}" wx:key="*this">
+      <block wx:if="{{i.nodes[item].props['slot']}}">
+        <view slot="{{i.nodes[item].props['slot']}}" 
+          class="{{i.nodes[item].props['class']}}" 
+        >
+          <block wx:for="{{i.nodes[item].children}}" wx:key="*this" wx:for-item="sItem">
+            <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item].nodes[sItem], a: a, tid: tid + 1 }}" />
+          </block>
+        </view>
+      </block>
+      <block wx:else>
+        <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item], a: a, tid: tid + 1 }}" />
+      </block>
+    </block>
+  </index2>
+</template>
+
+		<template name="REMAX_TPL_10_index2">
+  <index2
+    badge="{{_h.v(i.props['badge'])}}"
+icon="{{_h.v(i.props['icon'])}}"
+key="{{_h.v(i.props['key'])}}"
+onclick="{{_h.v(i.props['onclick'])}}"
+square="{{_h.v(i.props['square'])}}"
+text="{{_h.v(i.props['text'])}}">
+    <block wx:for="{{i.children}}" wx:key="*this">
+      <block wx:if="{{i.nodes[item].props['slot']}}">
+        <view slot="{{i.nodes[item].props['slot']}}" 
+          class="{{i.nodes[item].props['class']}}" 
+        >
+          <block wx:for="{{i.nodes[item].children}}" wx:key="*this" wx:for-item="sItem">
+            <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item].nodes[sItem], a: a, tid: tid + 1 }}" />
+          </block>
+        </view>
+      </block>
+      <block wx:else>
+        <template is="{{'REMAX_TPL_' + (tid + 1) + '_CONTAINER'}}" data="{{i: i.nodes[item], a: a, tid: tid + 1 }}" />
+      </block>
+    </block>
+  </index2>
 </template>
 
 		<template name="REMAX_TPL_1_input">

@@ -1,16 +1,16 @@
 
-.person___3nZtv {
+.person {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.personImag___374IV {
+.personImag {
   height: 5rem;
   width: 5rem;
   border-radius: 50%;
 }
 
-.personName___1cQbL{
+.personName{
  padding-right: 2rem;
 }

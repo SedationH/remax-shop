@@ -10391,7 +10391,8 @@ __webpack_require__.r(__webpack_exports__);
 var PAGE_EVENTS = {
   "pages/index/index": [],
   "pages/cart/cart": [],
-  "pages/user/user": []
+  "pages/user/user": [],
+  "pages/orderDetails/orderDetails": []
 };
 var APP_EVENTS = [];
 function pageEvents(name) {

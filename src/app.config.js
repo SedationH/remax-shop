@@ -3,6 +3,7 @@ module.exports = {
     'pages/index/index',
     'pages/cart/cart',
     'pages/user/user',
+    'pages/orderDetails/orderDetails'
   ],
   window: {
     navigationBarTitleText: 'Shop',
