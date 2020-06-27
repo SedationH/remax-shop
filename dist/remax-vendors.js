@@ -10392,7 +10392,8 @@ var PAGE_EVENTS = {
   "pages/index/index": [],
   "pages/cart/cart": [],
   "pages/user/user": [],
-  "pages/orderDetails/orderDetails": []
+  "pages/orderDetails/orderDetails": [],
+  "pages/shop/shop": []
 };
 var APP_EVENTS = [];
 function pageEvents(name) {

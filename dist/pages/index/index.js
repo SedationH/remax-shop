@@ -2,6 +2,22 @@ require('./../../runtime.js');
 require('./../../remax-vendors.js');
 (wx["webpackJsonp"] = wx["webpackJsonp"] || []).push([["pages/index/index"],{
 
+/***/ "./node_modules/@vant/weapp/lib/button/index.js":
+/*!******************************************************!*\
+  !*** ./node_modules/@vant/weapp/lib/button/index.js ***!
+  \******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* istanbul ignore next */
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _remax_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @remax/runtime */ "./node_modules/@remax/runtime/esm/index.js");
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(_remax_runtime__WEBPACK_IMPORTED_MODULE_0__["createNativeComponent"])('index3'));
+
+/***/ }),
+
 /***/ "./src/pages/index/index.jsx":
 /*!***********************************!*\
   !*** ./src/pages/index/index.jsx ***!
@@ -15,12 +31,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var remax_wechat__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! remax/wechat */ "./node_modules/remax/wechat.js");
+/* harmony import */ var _vant_weapp_lib_button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @vant/weapp/lib/button */ "./node_modules/@vant/weapp/lib/button/index.js");
+
 
 
 
 
 var _page = function _page() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__["createElement"](remax_wechat__WEBPACK_IMPORTED_MODULE_2__["View"], null, "Index");
+  var handleShopClick = function handleShopClick() {
+    Object(remax_wechat__WEBPACK_IMPORTED_MODULE_2__["navigateTo"])({
+      url: '/pages/shop/shop'
+    });
+  };
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__["createElement"](remax_wechat__WEBPACK_IMPORTED_MODULE_2__["View"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__["createElement"](_vant_weapp_lib_button__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    onclick: handleShopClick
+  }, "Go to Shop"));
 };
 
 _page.displayName = "Page[pages/index/index]";

@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "index4": "/remaxVendors/npm/_vant/weapp/lib/sidebar/index",
+    "index5": "/remaxVendors/npm/_vant/weapp/lib/sidebar-item/index",
+    "index6": "/remaxVendors/npm/_vant/weapp/lib/tabs/index",
+    "index7": "/remaxVendors/npm/_vant/weapp/lib/tab/index"
+  }
+}
