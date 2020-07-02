@@ -1,11 +1,21 @@
 .shop___3VjjP {
   display: flex;
+  flex-direction: column;
   height: 100vh;
-  width: 100wh;
 }
 
+.up___2PzJY {
+  display: flex;
+  height: calc(100vh - 90rpx);
+}
+
+.down___e6shg {
+  height: 30rpx;
+  flex-shrink: 0;
+}
+
+
 .left___1baQp {
-  height: 100vh;
   flex-shrink: 0;
   overflow-y: scroll;
 }
