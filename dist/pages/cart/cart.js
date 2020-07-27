@@ -35,7 +35,7 @@ _page.displayName = "Page[pages/cart/cart]";
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/sedationh/test/remax-shop/src/pages/cart/cart.jsx */"./src/pages/cart/cart.jsx");
+module.exports = __webpack_require__(/*! /Users/sedationh/workspace/remax-shop/src/pages/cart/cart.jsx */"./src/pages/cart/cart.jsx");
 
 
 /***/ })

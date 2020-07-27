@@ -4,7 +4,8 @@
     "pages/cart/cart",
     "pages/user/user",
     "pages/orderDetails/orderDetails",
-    "pages/shop/shop"
+    "pages/shop/shop",
+    "pages/login/login"
   ],
   "window": {
     "navigationBarTitleText": "Shop",

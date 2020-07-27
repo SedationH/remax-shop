@@ -37,7 +37,7 @@ _page.displayName = "Page[pages/orderDetails/orderDetails]";
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/sedationh/test/remax-shop/src/pages/orderDetails/orderDetails.jsx */"./src/pages/orderDetails/orderDetails.jsx");
+module.exports = __webpack_require__(/*! /Users/sedationh/workspace/remax-shop/src/pages/orderDetails/orderDetails.jsx */"./src/pages/orderDetails/orderDetails.jsx");
 
 
 /***/ })

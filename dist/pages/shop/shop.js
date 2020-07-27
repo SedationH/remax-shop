@@ -363,7 +363,7 @@ _page.displayName = "Page[pages/shop/shop]";
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/sedationh/test/remax-shop/src/pages/shop/shop.jsx */"./src/pages/shop/shop.jsx");
+module.exports = __webpack_require__(/*! /Users/sedationh/workspace/remax-shop/src/pages/shop/shop.jsx */"./src/pages/shop/shop.jsx");
 
 
 /***/ })

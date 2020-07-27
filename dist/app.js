@@ -7967,7 +7967,7 @@ module.exports = warning;
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Users_sedationh_test_remax_shop_node_modules_remax_react_devtools_core_dist_backend_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@remax/react-devtools-core/dist/backend.js */ "./node_modules/@remax/react-devtools-core/dist/backend.js");
+/* harmony import */ var _Users_sedationh_workspace_remax_shop_node_modules_remax_react_devtools_core_dist_backend_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@remax/react-devtools-core/dist/backend.js */ "./node_modules/@remax/react-devtools-core/dist/backend.js");
 
 
 /***/ }),
@@ -8039,10 +8039,10 @@ module.exports = function (originalModule) {
 
 /***/ }),
 
-/***/ "./src/app.js":
-/*!********************!*\
-  !*** ./src/app.js ***!
-  \********************/
+/***/ "./src/app.jsx":
+/*!*********************!*\
+  !*** ./src/app.jsx ***!
+  \*********************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -8051,17 +8051,32 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _remax_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @remax/runtime */ "./node_modules/@remax/runtime/esm/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _dva__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./dva */ "./src/dva.js");
+/* harmony import */ var _utils_user__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./utils/user */ "./src/utils/user.js");
+/* harmony import */ var _global_data__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./global_data */ "./src/global_data.js");
+/* harmony import */ var _dva__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./dva */ "./src/dva.js");
 
 
 
 
-var _App = _dva__WEBPACK_IMPORTED_MODULE_2__["default"].start(function (_ref) {
-  var children = _ref.children;
+
+
+
+var _App = function _App(_ref) {
+  var children = _ref.children; // 检测用户登陆状态
+
+  Object(_remax_runtime__WEBPACK_IMPORTED_MODULE_0__["useAppEvent"])('onShow', function () {
+    console.log('onshow');
+    Object(_utils_user__WEBPACK_IMPORTED_MODULE_2__["checkLogin"])().then(function () {
+      return Object(_global_data__WEBPACK_IMPORTED_MODULE_3__["set"])('hasLogin', true);
+    }).catch(function () {
+      return Object(_global_data__WEBPACK_IMPORTED_MODULE_3__["set"])('hasLogin', false);
+    });
+  });
   return children;
-});
+};
 
-var _app = _App;
+var _app = _dva__WEBPACK_IMPORTED_MODULE_4__["default"].start(_App);
+
 _app.displayName = "App";
 /* harmony default export */ __webpack_exports__["default"] = (App(Object(_remax_runtime__WEBPACK_IMPORTED_MODULE_0__["createAppConfig"])(_app)));
 
@@ -8217,14 +8232,14 @@ var initialTodoList = [{
 /***/ }),
 
 /***/ 0:
-/*!***************************************************************************************************************!*\
-  !*** multi (webpack)-inject-plugin/dist/webpack-inject-plugin.loader?id=webpack-inject-module-1 ./src/app.js ***!
-  \***************************************************************************************************************/
+/*!****************************************************************************************************************!*\
+  !*** multi (webpack)-inject-plugin/dist/webpack-inject-plugin.loader?id=webpack-inject-module-1 ./src/app.jsx ***!
+  \****************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/sedationh/test/remax-shop/node_modules/webpack-inject-plugin/dist/webpack-inject-plugin.loader?id=webpack-inject-module-1! */"./node_modules/webpack-inject-plugin/dist/webpack-inject-plugin.loader.js?id=webpack-inject-module-1!./");
-module.exports = __webpack_require__(/*! /Users/sedationh/test/remax-shop/src/app.js */"./src/app.js");
+__webpack_require__(/*! /Users/sedationh/workspace/remax-shop/node_modules/webpack-inject-plugin/dist/webpack-inject-plugin.loader?id=webpack-inject-module-1! */"./node_modules/webpack-inject-plugin/dist/webpack-inject-plugin.loader.js?id=webpack-inject-module-1!./");
+module.exports = __webpack_require__(/*! /Users/sedationh/workspace/remax-shop/src/app.jsx */"./src/app.jsx");
 
 
 /***/ })

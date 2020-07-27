@@ -10393,9 +10393,12 @@ var PAGE_EVENTS = {
   "pages/cart/cart": [],
   "pages/user/user": [],
   "pages/orderDetails/orderDetails": [],
-  "pages/shop/shop": []
+  "pages/shop/shop": [],
+  "pages/login/login": []
 };
-var APP_EVENTS = [];
+var APP_EVENTS = [
+  "onShow"
+];
 function pageEvents(name) {
   return PAGE_EVENTS[name];
 }
@@ -33927,6 +33930,196 @@ module.exports = function (module) {
 
   return module;
 };
+
+/***/ }),
+
+/***/ "./src/config/api.js":
+/*!***************************!*\
+  !*** ./src/config/api.js ***!
+  \***************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var apiRoot = 'http://106.15.75.118/';
+/* harmony default export */ __webpack_exports__["default"] = ({
+  AuthLoginByWeixin: apiRoot + 'auth/login_by_weixin' //微信登录
+
+});
+
+/***/ }),
+
+/***/ "./src/global_data.js":
+/*!****************************!*\
+  !*** ./src/global_data.js ***!
+  \****************************/
+/*! exports provided: set, get */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "set", function() { return set; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "get", function() { return get; });
+var globalData = {};
+function set(key, val) {
+  globalData[key] = val;
+}
+function get(key) {
+  return globalData[key];
+}
+
+/***/ }),
+
+/***/ "./src/services/auth.js":
+/*!******************************!*\
+  !*** ./src/services/auth.js ***!
+  \******************************/
+/*! exports provided: loginByWeixin */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "loginByWeixin", function() { return loginByWeixin; });
+/* harmony import */ var regenerator_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! regenerator-runtime */ "./node_modules/regenerator-runtime/runtime.js");
+/* harmony import */ var regenerator_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(regenerator_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _utils_request__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/request */ "./src/utils/request.js");
+/* harmony import */ var _config_api__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../config/api */ "./src/config/api.js");
+
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+
+ // 微信登陆
+
+function loginByWeixin(_x) {
+  return _loginByWeixin.apply(this, arguments);
+}
+
+function _loginByWeixin() {
+  _loginByWeixin = _asyncToGenerator( /*#__PURE__*/regenerator_runtime__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(payload) {
+    return regenerator_runtime__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+      while (1) {
+        switch (_context.prev = _context.next) {
+          case 0:
+            return _context.abrupt("return", _utils_request__WEBPACK_IMPORTED_MODULE_1__["default"].post(_config_api__WEBPACK_IMPORTED_MODULE_2__["default"].AuthLoginByWeixin, payload));
+
+          case 1:
+          case "end":
+            return _context.stop();
+        }
+      }
+    }, _callee);
+  }));
+  return _loginByWeixin.apply(this, arguments);
+}
+
+/***/ }),
+
+/***/ "./src/utils/request.js":
+/*!******************************!*\
+  !*** ./src/utils/request.js ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return request; });
+/* harmony import */ var remax_wechat__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! remax/wechat */ "./node_modules/remax/wechat.js");
+
+/**
+ * 封装微信提供的request
+ * 拦截加入验证身份
+ */
+
+function request(url) {
+  var data = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+  var method = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 'GET';
+  return new Promise(function (resolve, reject) {
+    Object(remax_wechat__WEBPACK_IMPORTED_MODULE_0__["request"])({
+      url: url,
+      data: data,
+      method: method,
+      header: {
+        'Content-Type': 'application/json',
+        'sessionid': Object(remax_wechat__WEBPACK_IMPORTED_MODULE_0__["getStorageSync"])('sessionid')
+      }
+    }).then(function (res) {
+      if (res.statusCode === 200) {
+        resolve(res);
+      } else {
+        reject(res);
+      }
+    }, function (err) {
+      return reject(err);
+    });
+  });
+}
+
+request.get = function (url, data) {
+  return request(url, data, 'GET');
+};
+
+request.post = function (url, data) {
+  return request(url, data, 'POST');
+};
+
+/***/ }),
+
+/***/ "./src/utils/user.js":
+/*!***************************!*\
+  !*** ./src/utils/user.js ***!
+  \***************************/
+/*! exports provided: checkLogin, loginByWexin */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "checkLogin", function() { return checkLogin; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "loginByWexin", function() { return loginByWexin; });
+/* harmony import */ var remax_wechat__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! remax/wechat */ "./node_modules/remax/wechat.js");
+/* harmony import */ var _services_auth__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../services/auth */ "./src/services/auth.js");
+
+
+/**
+ * 判断用户是否登陆
+ * 登陆是否仍然有效
+ */
+
+function checkLogin() {
+  return new Promise(function (resolve, reject) {
+    if (Object(remax_wechat__WEBPACK_IMPORTED_MODULE_0__["getStorageSync"])('userInfo') && Object(remax_wechat__WEBPACK_IMPORTED_MODULE_0__["getStorageSync"])('sessionid')) {
+      Object(remax_wechat__WEBPACK_IMPORTED_MODULE_0__["checkSession"])().then(function () {
+        resolve(true);
+      }).catch(function () {
+        return reject(false);
+      });
+    } else {
+      reject(false);
+    }
+  });
+}
+/**
+ * 微信登陆
+ */
+
+function loginByWexin() {
+  return new Promise(function (resolve, reject) {
+    Object(remax_wechat__WEBPACK_IMPORTED_MODULE_0__["login"])().then(function (res) {
+      Object(_services_auth__WEBPACK_IMPORTED_MODULE_1__["loginByWeixin"])({
+        code: res.code
+      }).then(function (loginRes) {
+        Object(remax_wechat__WEBPACK_IMPORTED_MODULE_0__["setStorageSync"])('session', loginRes.session);
+        resolve(loginRes);
+      });
+    }).catch(function (err) {
+      return reject(err);
+    });
+  });
+}
 
 /***/ })
 

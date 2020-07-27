@@ -847,6 +847,7 @@ style="{{_h.v(i.props['style'])}}">
     center="{{_h.v(i.props['center'])}}"
 icon="{{_h.v(i.props['icon'])}}"
 is-link="{{_h.v(i.props['is-link'])}}"
+onclick="{{_h.v(i.props['onclick'])}}"
 title="{{_h.v(i.props['title'])}}"
 value="{{_h.v(i.props['value'])}}">
     <block wx:for="{{i.children}}" wx:key="*this">
@@ -871,6 +872,7 @@ value="{{_h.v(i.props['value'])}}">
     center="{{_h.v(i.props['center'])}}"
 icon="{{_h.v(i.props['icon'])}}"
 is-link="{{_h.v(i.props['is-link'])}}"
+onclick="{{_h.v(i.props['onclick'])}}"
 title="{{_h.v(i.props['title'])}}"
 value="{{_h.v(i.props['value'])}}">
     <block wx:for="{{i.children}}" wx:key="*this">
@@ -895,6 +897,7 @@ value="{{_h.v(i.props['value'])}}">
     center="{{_h.v(i.props['center'])}}"
 icon="{{_h.v(i.props['icon'])}}"
 is-link="{{_h.v(i.props['is-link'])}}"
+onclick="{{_h.v(i.props['onclick'])}}"
 title="{{_h.v(i.props['title'])}}"
 value="{{_h.v(i.props['value'])}}">
     <block wx:for="{{i.children}}" wx:key="*this">
@@ -919,6 +922,7 @@ value="{{_h.v(i.props['value'])}}">
     center="{{_h.v(i.props['center'])}}"
 icon="{{_h.v(i.props['icon'])}}"
 is-link="{{_h.v(i.props['is-link'])}}"
+onclick="{{_h.v(i.props['onclick'])}}"
 title="{{_h.v(i.props['title'])}}"
 value="{{_h.v(i.props['value'])}}">
     <block wx:for="{{i.children}}" wx:key="*this">
@@ -943,6 +947,7 @@ value="{{_h.v(i.props['value'])}}">
     center="{{_h.v(i.props['center'])}}"
 icon="{{_h.v(i.props['icon'])}}"
 is-link="{{_h.v(i.props['is-link'])}}"
+onclick="{{_h.v(i.props['onclick'])}}"
 title="{{_h.v(i.props['title'])}}"
 value="{{_h.v(i.props['value'])}}">
     <block wx:for="{{i.children}}" wx:key="*this">
@@ -967,6 +972,7 @@ value="{{_h.v(i.props['value'])}}">
     center="{{_h.v(i.props['center'])}}"
 icon="{{_h.v(i.props['icon'])}}"
 is-link="{{_h.v(i.props['is-link'])}}"
+onclick="{{_h.v(i.props['onclick'])}}"
 title="{{_h.v(i.props['title'])}}"
 value="{{_h.v(i.props['value'])}}">
     <block wx:for="{{i.children}}" wx:key="*this">
@@ -991,6 +997,7 @@ value="{{_h.v(i.props['value'])}}">
     center="{{_h.v(i.props['center'])}}"
 icon="{{_h.v(i.props['icon'])}}"
 is-link="{{_h.v(i.props['is-link'])}}"
+onclick="{{_h.v(i.props['onclick'])}}"
 title="{{_h.v(i.props['title'])}}"
 value="{{_h.v(i.props['value'])}}">
     <block wx:for="{{i.children}}" wx:key="*this">
@@ -1015,6 +1022,7 @@ value="{{_h.v(i.props['value'])}}">
     center="{{_h.v(i.props['center'])}}"
 icon="{{_h.v(i.props['icon'])}}"
 is-link="{{_h.v(i.props['is-link'])}}"
+onclick="{{_h.v(i.props['onclick'])}}"
 title="{{_h.v(i.props['title'])}}"
 value="{{_h.v(i.props['value'])}}">
     <block wx:for="{{i.children}}" wx:key="*this">
@@ -1039,6 +1047,7 @@ value="{{_h.v(i.props['value'])}}">
     center="{{_h.v(i.props['center'])}}"
 icon="{{_h.v(i.props['icon'])}}"
 is-link="{{_h.v(i.props['is-link'])}}"
+onclick="{{_h.v(i.props['onclick'])}}"
 title="{{_h.v(i.props['title'])}}"
 value="{{_h.v(i.props['value'])}}">
     <block wx:for="{{i.children}}" wx:key="*this">
@@ -1063,6 +1072,7 @@ value="{{_h.v(i.props['value'])}}">
     center="{{_h.v(i.props['center'])}}"
 icon="{{_h.v(i.props['icon'])}}"
 is-link="{{_h.v(i.props['is-link'])}}"
+onclick="{{_h.v(i.props['onclick'])}}"
 title="{{_h.v(i.props['title'])}}"
 value="{{_h.v(i.props['value'])}}">
     <block wx:for="{{i.children}}" wx:key="*this">

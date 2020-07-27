@@ -146,9 +146,16 @@ var _page = function _page() {
     });
   };
 
+  var handleLoginCellClick = function handleLoginCellClick() {
+    Object(remax_wechat__WEBPACK_IMPORTED_MODULE_2__["navigateTo"])({
+      url: '/pages/login/login'
+    });
+  };
+
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_vant_weapp_lib_cell_group__WEBPACK_IMPORTED_MODULE_3__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_vant_weapp_lib_cell__WEBPACK_IMPORTED_MODULE_4__["default"], {
     center: true,
-    "is-link": true
+    "is-link": true,
+    onclick: handleLoginCellClick
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(remax_wechat__WEBPACK_IMPORTED_MODULE_2__["View"], {
     slot: "title",
     className: _user_css_modules__WEBPACK_IMPORTED_MODULE_8___default.a.person
@@ -195,7 +202,7 @@ _page.displayName = "Page[pages/user/user]";
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/sedationh/test/remax-shop/src/pages/user/user.jsx */"./src/pages/user/user.jsx");
+module.exports = __webpack_require__(/*! /Users/sedationh/workspace/remax-shop/src/pages/user/user.jsx */"./src/pages/user/user.jsx");
 
 
 /***/ })

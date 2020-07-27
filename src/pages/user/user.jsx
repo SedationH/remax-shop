@@ -33,12 +33,18 @@ export default () => {
       url: `/pages/orderDetails/orderDetails?sort=${sortPara}`
     })
   }
+  const handleLoginCellClick = () => {
+    navigateTo({
+      url: '/pages/login/login'
+    })
+  }
   return (
     <>
       <VanCellGroup>
         <VanCell
           center
           is-link
+          onclick={handleLoginCellClick}
         >
           <View slot="title" className={style.person}>
             <Image src={defaultUserImag} className={style.personImag} />
