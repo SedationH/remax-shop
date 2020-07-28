@@ -78,7 +78,12 @@ export default () => {
           }
         </VanGrid>
         <VanCell
-          title="我的地址和电话"
+          title="我的地址"
+          icon="description"
+          is-link
+        />
+        <VanCell
+          title="我的电话"
           icon="description"
           is-link
         />

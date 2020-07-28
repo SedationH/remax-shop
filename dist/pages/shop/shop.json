@@ -1,11 +1,11 @@
 {
   "usingComponents": {
-    "index3": "/remaxVendors/npm/_vant/weapp/lib/button/index",
-    "index4": "/remaxVendors/npm/_vant/weapp/lib/sidebar/index",
-    "index5": "/remaxVendors/npm/_vant/weapp/lib/sidebar-item/index",
-    "index6": "/remaxVendors/npm/_vant/weapp/lib/tabs/index",
-    "index7": "/remaxVendors/npm/_vant/weapp/lib/tab/index",
-    "index8": "/remaxVendors/npm/_vant/weapp/lib/card/index",
+    "index3": "/remaxVendors/npm/_vant/weapp/lib/sidebar/index",
+    "index4": "/remaxVendors/npm/_vant/weapp/lib/sidebar-item/index",
+    "index5": "/remaxVendors/npm/_vant/weapp/lib/tabs/index",
+    "index6": "/remaxVendors/npm/_vant/weapp/lib/tab/index",
+    "index7": "/remaxVendors/npm/_vant/weapp/lib/card/index",
+    "index8": "/remaxVendors/npm/_vant/weapp/lib/button/index",
     "index9": "/remaxVendors/npm/_vant/weapp/lib/goods-action/index",
     "index10": "/remaxVendors/npm/_vant/weapp/lib/goods-action-icon/index",
     "index11": "/remaxVendors/npm/_vant/weapp/lib/goods-action-button/index"

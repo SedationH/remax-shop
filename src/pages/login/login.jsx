@@ -1,14 +1,21 @@
 import React from 'react'
-import { View, Button, login, checkSession, navigateBack } from 'remax/wechat';
+import { View, Button, login, checkSession, navigateBack, getStorageSync } from 'remax/wechat';
 import { checkLogin, loginByWexin } from '../../utils/user'
-import { set as setGlobalData } from '../../global_data';
+import { set as setGlobalData, get as getGlobalData } from '../../global_data';
 
 export default function Login(
 
 ) {
   const wxLogin = (res) => {
+    const userInfo = {
+      ...res.detail.userInfo,
+      avatar: res.detail.userInfo.avatarUrl,
+      nickname: res.detail.userInfo.nickName,
+    }
+    delete userInfo.nickName
+    delete userInfo.avatarUrl
     checkLogin().catch(() => {
-      loginByWexin().then(
+      loginByWexin(userInfo).then(
         () => {
           setGlobalData('hasLogin', true)
           navigateBack({
@@ -22,7 +29,16 @@ export default function Login(
       })
     })
   }
+
+  const handleSearch = () => {
+    console.log('search')
+    console.log(getGlobalData('hasLogin'))
+    console.log(getStorageSync(''))
+  }
   return (
-    <Button type="primary" open-type="getUserInfo" onGetUserInfo={wxLogin}>微信登陆</Button>
+    <>
+      <Button type="primary" open-type="getUserInfo" onGetUserInfo={wxLogin}>微信登陆</Button>
+      <Button onClick={handleSearch}>Search</Button>
+    </>
   )
 }

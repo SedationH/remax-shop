@@ -184,7 +184,11 @@ var _page = function _page() {
       __key: index
     });
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_vant_weapp_lib_cell__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    title: "\u6211\u7684\u5730\u5740\u548C\u7535\u8BDD",
+    title: "\u6211\u7684\u5730\u5740",
+    icon: "description",
+    "is-link": true
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_vant_weapp_lib_cell__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    title: "\u6211\u7684\u7535\u8BDD",
     icon: "description",
     "is-link": true
   })));

@@ -8054,6 +8054,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _utils_user__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./utils/user */ "./src/utils/user.js");
 /* harmony import */ var _global_data__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./global_data */ "./src/global_data.js");
 /* harmony import */ var _dva__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./dva */ "./src/dva.js");
+/* harmony import */ var remax_wechat__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! remax/wechat */ "./node_modules/remax/wechat.js");
+
 
 
 
@@ -8062,10 +8064,15 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var _App = function _App(_ref) {
-  var children = _ref.children; // 检测用户登陆状态
+  var children = _ref.children;
+  Object(_remax_runtime__WEBPACK_IMPORTED_MODULE_0__["useAppEvent"])('onLaunch', function () {
+    Object(remax_wechat__WEBPACK_IMPORTED_MODULE_5__["login"])().then(function (_ref2) {
+      var code = _ref2.code;
+      return console.log(code);
+    });
+  }); // 检测用户登陆状态
 
   Object(_remax_runtime__WEBPACK_IMPORTED_MODULE_0__["useAppEvent"])('onShow', function () {
-    console.log('onshow');
     Object(_utils_user__WEBPACK_IMPORTED_MODULE_2__["checkLogin"])().then(function () {
       return Object(_global_data__WEBPACK_IMPORTED_MODULE_3__["set"])('hasLogin', true);
     }).catch(function () {
@@ -8075,7 +8082,7 @@ var _App = function _App(_ref) {
   return children;
 };
 
-var _app = _dva__WEBPACK_IMPORTED_MODULE_4__["default"].start(_App);
+var _app = _dva__WEBPACK_IMPORTED_MODULE_4__["default"].start(_App, {});
 
 _app.displayName = "App";
 /* harmony default export */ __webpack_exports__["default"] = (App(Object(_remax_runtime__WEBPACK_IMPORTED_MODULE_0__["createAppConfig"])(_app)));

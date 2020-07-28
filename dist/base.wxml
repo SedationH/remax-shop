@@ -1964,8 +1964,7 @@ text="{{_h.v(i.props['text'])}}">
 
 		<template name="REMAX_TPL_1_index3">
   <index3
-    onclick="{{_h.v(i.props['onclick'])}}"
-size="{{_h.v(i.props['size'])}}">
+    >
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
@@ -1985,8 +1984,7 @@ size="{{_h.v(i.props['size'])}}">
 
 		<template name="REMAX_TPL_2_index3">
   <index3
-    onclick="{{_h.v(i.props['onclick'])}}"
-size="{{_h.v(i.props['size'])}}">
+    >
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
@@ -2006,8 +2004,7 @@ size="{{_h.v(i.props['size'])}}">
 
 		<template name="REMAX_TPL_3_index3">
   <index3
-    onclick="{{_h.v(i.props['onclick'])}}"
-size="{{_h.v(i.props['size'])}}">
+    >
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
@@ -2027,8 +2024,7 @@ size="{{_h.v(i.props['size'])}}">
 
 		<template name="REMAX_TPL_4_index3">
   <index3
-    onclick="{{_h.v(i.props['onclick'])}}"
-size="{{_h.v(i.props['size'])}}">
+    >
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
@@ -2048,8 +2044,7 @@ size="{{_h.v(i.props['size'])}}">
 
 		<template name="REMAX_TPL_5_index3">
   <index3
-    onclick="{{_h.v(i.props['onclick'])}}"
-size="{{_h.v(i.props['size'])}}">
+    >
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
@@ -2069,8 +2064,7 @@ size="{{_h.v(i.props['size'])}}">
 
 		<template name="REMAX_TPL_6_index3">
   <index3
-    onclick="{{_h.v(i.props['onclick'])}}"
-size="{{_h.v(i.props['size'])}}">
+    >
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
@@ -2090,8 +2084,7 @@ size="{{_h.v(i.props['size'])}}">
 
 		<template name="REMAX_TPL_7_index3">
   <index3
-    onclick="{{_h.v(i.props['onclick'])}}"
-size="{{_h.v(i.props['size'])}}">
+    >
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
@@ -2111,8 +2104,7 @@ size="{{_h.v(i.props['size'])}}">
 
 		<template name="REMAX_TPL_8_index3">
   <index3
-    onclick="{{_h.v(i.props['onclick'])}}"
-size="{{_h.v(i.props['size'])}}">
+    >
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
@@ -2132,8 +2124,7 @@ size="{{_h.v(i.props['size'])}}">
 
 		<template name="REMAX_TPL_9_index3">
   <index3
-    onclick="{{_h.v(i.props['onclick'])}}"
-size="{{_h.v(i.props['size'])}}">
+    >
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
@@ -2153,8 +2144,7 @@ size="{{_h.v(i.props['size'])}}">
 
 		<template name="REMAX_TPL_10_index3">
   <index3
-    onclick="{{_h.v(i.props['onclick'])}}"
-size="{{_h.v(i.props['size'])}}">
+    >
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
@@ -2174,7 +2164,7 @@ size="{{_h.v(i.props['size'])}}">
 
 		<template name="REMAX_TPL_1_index4">
   <index4
-    >
+    title="{{_h.v(i.props['title'])}}">
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
@@ -2194,7 +2184,7 @@ size="{{_h.v(i.props['size'])}}">
 
 		<template name="REMAX_TPL_2_index4">
   <index4
-    >
+    title="{{_h.v(i.props['title'])}}">
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
@@ -2214,7 +2204,7 @@ size="{{_h.v(i.props['size'])}}">
 
 		<template name="REMAX_TPL_3_index4">
   <index4
-    >
+    title="{{_h.v(i.props['title'])}}">
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
@@ -2234,7 +2224,7 @@ size="{{_h.v(i.props['size'])}}">
 
 		<template name="REMAX_TPL_4_index4">
   <index4
-    >
+    title="{{_h.v(i.props['title'])}}">
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
@@ -2254,7 +2244,7 @@ size="{{_h.v(i.props['size'])}}">
 
 		<template name="REMAX_TPL_5_index4">
   <index4
-    >
+    title="{{_h.v(i.props['title'])}}">
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
@@ -2274,7 +2264,7 @@ size="{{_h.v(i.props['size'])}}">
 
 		<template name="REMAX_TPL_6_index4">
   <index4
-    >
+    title="{{_h.v(i.props['title'])}}">
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
@@ -2294,7 +2284,7 @@ size="{{_h.v(i.props['size'])}}">
 
 		<template name="REMAX_TPL_7_index4">
   <index4
-    >
+    title="{{_h.v(i.props['title'])}}">
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
@@ -2314,7 +2304,7 @@ size="{{_h.v(i.props['size'])}}">
 
 		<template name="REMAX_TPL_8_index4">
   <index4
-    >
+    title="{{_h.v(i.props['title'])}}">
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
@@ -2334,7 +2324,7 @@ size="{{_h.v(i.props['size'])}}">
 
 		<template name="REMAX_TPL_9_index4">
   <index4
-    >
+    title="{{_h.v(i.props['title'])}}">
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
@@ -2354,7 +2344,7 @@ size="{{_h.v(i.props['size'])}}">
 
 		<template name="REMAX_TPL_10_index4">
   <index4
-    >
+    title="{{_h.v(i.props['title'])}}">
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
@@ -2374,7 +2364,7 @@ size="{{_h.v(i.props['size'])}}">
 
 		<template name="REMAX_TPL_1_index5">
   <index5
-    title="{{_h.v(i.props['title'])}}">
+    >
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
@@ -2394,7 +2384,7 @@ size="{{_h.v(i.props['size'])}}">
 
 		<template name="REMAX_TPL_2_index5">
   <index5
-    title="{{_h.v(i.props['title'])}}">
+    >
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
@@ -2414,7 +2404,7 @@ size="{{_h.v(i.props['size'])}}">
 
 		<template name="REMAX_TPL_3_index5">
   <index5
-    title="{{_h.v(i.props['title'])}}">
+    >
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
@@ -2434,7 +2424,7 @@ size="{{_h.v(i.props['size'])}}">
 
 		<template name="REMAX_TPL_4_index5">
   <index5
-    title="{{_h.v(i.props['title'])}}">
+    >
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
@@ -2454,7 +2444,7 @@ size="{{_h.v(i.props['size'])}}">
 
 		<template name="REMAX_TPL_5_index5">
   <index5
-    title="{{_h.v(i.props['title'])}}">
+    >
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
@@ -2474,7 +2464,7 @@ size="{{_h.v(i.props['size'])}}">
 
 		<template name="REMAX_TPL_6_index5">
   <index5
-    title="{{_h.v(i.props['title'])}}">
+    >
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
@@ -2494,7 +2484,7 @@ size="{{_h.v(i.props['size'])}}">
 
 		<template name="REMAX_TPL_7_index5">
   <index5
-    title="{{_h.v(i.props['title'])}}">
+    >
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
@@ -2514,7 +2504,7 @@ size="{{_h.v(i.props['size'])}}">
 
 		<template name="REMAX_TPL_8_index5">
   <index5
-    title="{{_h.v(i.props['title'])}}">
+    >
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
@@ -2534,7 +2524,7 @@ size="{{_h.v(i.props['size'])}}">
 
 		<template name="REMAX_TPL_9_index5">
   <index5
-    title="{{_h.v(i.props['title'])}}">
+    >
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
@@ -2554,7 +2544,7 @@ size="{{_h.v(i.props['size'])}}">
 
 		<template name="REMAX_TPL_10_index5">
   <index5
-    title="{{_h.v(i.props['title'])}}">
+    >
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
@@ -2574,7 +2564,7 @@ size="{{_h.v(i.props['size'])}}">
 
 		<template name="REMAX_TPL_1_index6">
   <index6
-    >
+    title="{{_h.v(i.props['title'])}}">
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
@@ -2594,7 +2584,7 @@ size="{{_h.v(i.props['size'])}}">
 
 		<template name="REMAX_TPL_2_index6">
   <index6
-    >
+    title="{{_h.v(i.props['title'])}}">
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
@@ -2614,7 +2604,7 @@ size="{{_h.v(i.props['size'])}}">
 
 		<template name="REMAX_TPL_3_index6">
   <index6
-    >
+    title="{{_h.v(i.props['title'])}}">
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
@@ -2634,7 +2624,7 @@ size="{{_h.v(i.props['size'])}}">
 
 		<template name="REMAX_TPL_4_index6">
   <index6
-    >
+    title="{{_h.v(i.props['title'])}}">
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
@@ -2654,7 +2644,7 @@ size="{{_h.v(i.props['size'])}}">
 
 		<template name="REMAX_TPL_5_index6">
   <index6
-    >
+    title="{{_h.v(i.props['title'])}}">
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
@@ -2674,7 +2664,7 @@ size="{{_h.v(i.props['size'])}}">
 
 		<template name="REMAX_TPL_6_index6">
   <index6
-    >
+    title="{{_h.v(i.props['title'])}}">
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
@@ -2694,7 +2684,7 @@ size="{{_h.v(i.props['size'])}}">
 
 		<template name="REMAX_TPL_7_index6">
   <index6
-    >
+    title="{{_h.v(i.props['title'])}}">
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
@@ -2714,7 +2704,7 @@ size="{{_h.v(i.props['size'])}}">
 
 		<template name="REMAX_TPL_8_index6">
   <index6
-    >
+    title="{{_h.v(i.props['title'])}}">
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
@@ -2734,7 +2724,7 @@ size="{{_h.v(i.props['size'])}}">
 
 		<template name="REMAX_TPL_9_index6">
   <index6
-    >
+    title="{{_h.v(i.props['title'])}}">
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
@@ -2754,7 +2744,7 @@ size="{{_h.v(i.props['size'])}}">
 
 		<template name="REMAX_TPL_10_index6">
   <index6
-    >
+    title="{{_h.v(i.props['title'])}}">
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
@@ -2774,7 +2764,12 @@ size="{{_h.v(i.props['size'])}}">
 
 		<template name="REMAX_TPL_1_index7">
   <index7
-    title="{{_h.v(i.props['title'])}}">
+    desc="{{_h.v(i.props['desc'])}}"
+num="{{_h.v(i.props['num'])}}"
+price="{{_h.v(i.props['price'])}}"
+tag="{{_h.v(i.props['tag'])}}"
+thumb="{{_h.v(i.props['thumb'])}}"
+title="{{_h.v(i.props['title'])}}">
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
@@ -2794,7 +2789,12 @@ size="{{_h.v(i.props['size'])}}">
 
 		<template name="REMAX_TPL_2_index7">
   <index7
-    title="{{_h.v(i.props['title'])}}">
+    desc="{{_h.v(i.props['desc'])}}"
+num="{{_h.v(i.props['num'])}}"
+price="{{_h.v(i.props['price'])}}"
+tag="{{_h.v(i.props['tag'])}}"
+thumb="{{_h.v(i.props['thumb'])}}"
+title="{{_h.v(i.props['title'])}}">
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
@@ -2814,7 +2814,12 @@ size="{{_h.v(i.props['size'])}}">
 
 		<template name="REMAX_TPL_3_index7">
   <index7
-    title="{{_h.v(i.props['title'])}}">
+    desc="{{_h.v(i.props['desc'])}}"
+num="{{_h.v(i.props['num'])}}"
+price="{{_h.v(i.props['price'])}}"
+tag="{{_h.v(i.props['tag'])}}"
+thumb="{{_h.v(i.props['thumb'])}}"
+title="{{_h.v(i.props['title'])}}">
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
@@ -2834,7 +2839,12 @@ size="{{_h.v(i.props['size'])}}">
 
 		<template name="REMAX_TPL_4_index7">
   <index7
-    title="{{_h.v(i.props['title'])}}">
+    desc="{{_h.v(i.props['desc'])}}"
+num="{{_h.v(i.props['num'])}}"
+price="{{_h.v(i.props['price'])}}"
+tag="{{_h.v(i.props['tag'])}}"
+thumb="{{_h.v(i.props['thumb'])}}"
+title="{{_h.v(i.props['title'])}}">
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
@@ -2854,7 +2864,12 @@ size="{{_h.v(i.props['size'])}}">
 
 		<template name="REMAX_TPL_5_index7">
   <index7
-    title="{{_h.v(i.props['title'])}}">
+    desc="{{_h.v(i.props['desc'])}}"
+num="{{_h.v(i.props['num'])}}"
+price="{{_h.v(i.props['price'])}}"
+tag="{{_h.v(i.props['tag'])}}"
+thumb="{{_h.v(i.props['thumb'])}}"
+title="{{_h.v(i.props['title'])}}">
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
@@ -2874,7 +2889,12 @@ size="{{_h.v(i.props['size'])}}">
 
 		<template name="REMAX_TPL_6_index7">
   <index7
-    title="{{_h.v(i.props['title'])}}">
+    desc="{{_h.v(i.props['desc'])}}"
+num="{{_h.v(i.props['num'])}}"
+price="{{_h.v(i.props['price'])}}"
+tag="{{_h.v(i.props['tag'])}}"
+thumb="{{_h.v(i.props['thumb'])}}"
+title="{{_h.v(i.props['title'])}}">
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
@@ -2894,7 +2914,12 @@ size="{{_h.v(i.props['size'])}}">
 
 		<template name="REMAX_TPL_7_index7">
   <index7
-    title="{{_h.v(i.props['title'])}}">
+    desc="{{_h.v(i.props['desc'])}}"
+num="{{_h.v(i.props['num'])}}"
+price="{{_h.v(i.props['price'])}}"
+tag="{{_h.v(i.props['tag'])}}"
+thumb="{{_h.v(i.props['thumb'])}}"
+title="{{_h.v(i.props['title'])}}">
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
@@ -2914,7 +2939,12 @@ size="{{_h.v(i.props['size'])}}">
 
 		<template name="REMAX_TPL_8_index7">
   <index7
-    title="{{_h.v(i.props['title'])}}">
+    desc="{{_h.v(i.props['desc'])}}"
+num="{{_h.v(i.props['num'])}}"
+price="{{_h.v(i.props['price'])}}"
+tag="{{_h.v(i.props['tag'])}}"
+thumb="{{_h.v(i.props['thumb'])}}"
+title="{{_h.v(i.props['title'])}}">
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
@@ -2934,7 +2964,12 @@ size="{{_h.v(i.props['size'])}}">
 
 		<template name="REMAX_TPL_9_index7">
   <index7
-    title="{{_h.v(i.props['title'])}}">
+    desc="{{_h.v(i.props['desc'])}}"
+num="{{_h.v(i.props['num'])}}"
+price="{{_h.v(i.props['price'])}}"
+tag="{{_h.v(i.props['tag'])}}"
+thumb="{{_h.v(i.props['thumb'])}}"
+title="{{_h.v(i.props['title'])}}">
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
@@ -2954,7 +2989,12 @@ size="{{_h.v(i.props['size'])}}">
 
 		<template name="REMAX_TPL_10_index7">
   <index7
-    title="{{_h.v(i.props['title'])}}">
+    desc="{{_h.v(i.props['desc'])}}"
+num="{{_h.v(i.props['num'])}}"
+price="{{_h.v(i.props['price'])}}"
+tag="{{_h.v(i.props['tag'])}}"
+thumb="{{_h.v(i.props['thumb'])}}"
+title="{{_h.v(i.props['title'])}}">
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
@@ -2974,12 +3014,8 @@ size="{{_h.v(i.props['size'])}}">
 
 		<template name="REMAX_TPL_1_index8">
   <index8
-    desc="{{_h.v(i.props['desc'])}}"
-num="{{_h.v(i.props['num'])}}"
-price="{{_h.v(i.props['price'])}}"
-tag="{{_h.v(i.props['tag'])}}"
-thumb="{{_h.v(i.props['thumb'])}}"
-title="{{_h.v(i.props['title'])}}">
+    onclick="{{_h.v(i.props['onclick'])}}"
+size="{{_h.v(i.props['size'])}}">
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
@@ -2999,12 +3035,8 @@ title="{{_h.v(i.props['title'])}}">
 
 		<template name="REMAX_TPL_2_index8">
   <index8
-    desc="{{_h.v(i.props['desc'])}}"
-num="{{_h.v(i.props['num'])}}"
-price="{{_h.v(i.props['price'])}}"
-tag="{{_h.v(i.props['tag'])}}"
-thumb="{{_h.v(i.props['thumb'])}}"
-title="{{_h.v(i.props['title'])}}">
+    onclick="{{_h.v(i.props['onclick'])}}"
+size="{{_h.v(i.props['size'])}}">
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
@@ -3024,12 +3056,8 @@ title="{{_h.v(i.props['title'])}}">
 
 		<template name="REMAX_TPL_3_index8">
   <index8
-    desc="{{_h.v(i.props['desc'])}}"
-num="{{_h.v(i.props['num'])}}"
-price="{{_h.v(i.props['price'])}}"
-tag="{{_h.v(i.props['tag'])}}"
-thumb="{{_h.v(i.props['thumb'])}}"
-title="{{_h.v(i.props['title'])}}">
+    onclick="{{_h.v(i.props['onclick'])}}"
+size="{{_h.v(i.props['size'])}}">
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
@@ -3049,12 +3077,8 @@ title="{{_h.v(i.props['title'])}}">
 
 		<template name="REMAX_TPL_4_index8">
   <index8
-    desc="{{_h.v(i.props['desc'])}}"
-num="{{_h.v(i.props['num'])}}"
-price="{{_h.v(i.props['price'])}}"
-tag="{{_h.v(i.props['tag'])}}"
-thumb="{{_h.v(i.props['thumb'])}}"
-title="{{_h.v(i.props['title'])}}">
+    onclick="{{_h.v(i.props['onclick'])}}"
+size="{{_h.v(i.props['size'])}}">
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
@@ -3074,12 +3098,8 @@ title="{{_h.v(i.props['title'])}}">
 
 		<template name="REMAX_TPL_5_index8">
   <index8
-    desc="{{_h.v(i.props['desc'])}}"
-num="{{_h.v(i.props['num'])}}"
-price="{{_h.v(i.props['price'])}}"
-tag="{{_h.v(i.props['tag'])}}"
-thumb="{{_h.v(i.props['thumb'])}}"
-title="{{_h.v(i.props['title'])}}">
+    onclick="{{_h.v(i.props['onclick'])}}"
+size="{{_h.v(i.props['size'])}}">
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
@@ -3099,12 +3119,8 @@ title="{{_h.v(i.props['title'])}}">
 
 		<template name="REMAX_TPL_6_index8">
   <index8
-    desc="{{_h.v(i.props['desc'])}}"
-num="{{_h.v(i.props['num'])}}"
-price="{{_h.v(i.props['price'])}}"
-tag="{{_h.v(i.props['tag'])}}"
-thumb="{{_h.v(i.props['thumb'])}}"
-title="{{_h.v(i.props['title'])}}">
+    onclick="{{_h.v(i.props['onclick'])}}"
+size="{{_h.v(i.props['size'])}}">
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
@@ -3124,12 +3140,8 @@ title="{{_h.v(i.props['title'])}}">
 
 		<template name="REMAX_TPL_7_index8">
   <index8
-    desc="{{_h.v(i.props['desc'])}}"
-num="{{_h.v(i.props['num'])}}"
-price="{{_h.v(i.props['price'])}}"
-tag="{{_h.v(i.props['tag'])}}"
-thumb="{{_h.v(i.props['thumb'])}}"
-title="{{_h.v(i.props['title'])}}">
+    onclick="{{_h.v(i.props['onclick'])}}"
+size="{{_h.v(i.props['size'])}}">
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
@@ -3149,12 +3161,8 @@ title="{{_h.v(i.props['title'])}}">
 
 		<template name="REMAX_TPL_8_index8">
   <index8
-    desc="{{_h.v(i.props['desc'])}}"
-num="{{_h.v(i.props['num'])}}"
-price="{{_h.v(i.props['price'])}}"
-tag="{{_h.v(i.props['tag'])}}"
-thumb="{{_h.v(i.props['thumb'])}}"
-title="{{_h.v(i.props['title'])}}">
+    onclick="{{_h.v(i.props['onclick'])}}"
+size="{{_h.v(i.props['size'])}}">
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
@@ -3174,12 +3182,8 @@ title="{{_h.v(i.props['title'])}}">
 
 		<template name="REMAX_TPL_9_index8">
   <index8
-    desc="{{_h.v(i.props['desc'])}}"
-num="{{_h.v(i.props['num'])}}"
-price="{{_h.v(i.props['price'])}}"
-tag="{{_h.v(i.props['tag'])}}"
-thumb="{{_h.v(i.props['thumb'])}}"
-title="{{_h.v(i.props['title'])}}">
+    onclick="{{_h.v(i.props['onclick'])}}"
+size="{{_h.v(i.props['size'])}}">
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 
@@ -3199,12 +3203,8 @@ title="{{_h.v(i.props['title'])}}">
 
 		<template name="REMAX_TPL_10_index8">
   <index8
-    desc="{{_h.v(i.props['desc'])}}"
-num="{{_h.v(i.props['num'])}}"
-price="{{_h.v(i.props['price'])}}"
-tag="{{_h.v(i.props['tag'])}}"
-thumb="{{_h.v(i.props['thumb'])}}"
-title="{{_h.v(i.props['title'])}}">
+    onclick="{{_h.v(i.props['onclick'])}}"
+size="{{_h.v(i.props['size'])}}">
     <block wx:for="{{i.children}}" wx:key="*this">
       <block wx:if="{{i.nodes[item].props['slot']}}">
         <view slot="{{i.nodes[item].props['slot']}}" 

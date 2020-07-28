@@ -1,5 +1,5 @@
-const apiRoot = 'http://106.15.75.118/'
+const apiRoot = 'http://106.15.75.118/api/'
 
 export default {
-  AuthLoginByWeixin: apiRoot + 'auth/login_by_weixin', //微信登录
+  AuthLoginByWeixin: apiRoot + 'account/login', //微信登录
 }

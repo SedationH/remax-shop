@@ -10397,6 +10397,7 @@ var PAGE_EVENTS = {
   "pages/login/login": []
 };
 var APP_EVENTS = [
+  "onLaunch",
   "onShow"
 ];
 function pageEvents(name) {
@@ -13649,7 +13650,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _remax_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @remax/runtime */ "./node_modules/@remax/runtime/esm/index.js");
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(_remax_runtime__WEBPACK_IMPORTED_MODULE_0__["createNativeComponent"])('index3'));
+/* harmony default export */ __webpack_exports__["default"] = (Object(_remax_runtime__WEBPACK_IMPORTED_MODULE_0__["createNativeComponent"])('index8'));
 
 /***/ }),
 
@@ -33942,9 +33943,9 @@ module.exports = function (module) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-var apiRoot = 'http://106.15.75.118/';
+var apiRoot = 'http://106.15.75.118/api/';
 /* harmony default export */ __webpack_exports__["default"] = ({
-  AuthLoginByWeixin: apiRoot + 'auth/login_by_weixin' //微信登录
+  AuthLoginByWeixin: apiRoot + 'account/login' //微信登录
 
 });
 
@@ -34082,12 +34083,32 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "loginByWexin", function() { return loginByWexin; });
 /* harmony import */ var remax_wechat__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! remax/wechat */ "./node_modules/remax/wechat.js");
 /* harmony import */ var _services_auth__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../services/auth */ "./src/services/auth.js");
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 
+
+
+function getSessionid(loginRes) {
+  var cookie = loginRes.cookies[0];
+  var index = cookie.indexOf('sessionid') + 'sessionid'.length + 1;
+  var sessionid = '';
+
+  for (var i = index; i < cookie.length; i++) {
+    if (cookie[i] === ';' || sessionid[i] === ' ') break;
+    sessionid += cookie[i];
+  }
+
+  return sessionid;
+}
 /**
  * 判断用户是否登陆
  * 登陆是否仍然有效
  */
+
 
 function checkLogin() {
   return new Promise(function (resolve, reject) {
@@ -34106,17 +34127,19 @@ function checkLogin() {
  * 微信登陆
  */
 
-function loginByWexin() {
+function loginByWexin(userInfo) {
   return new Promise(function (resolve, reject) {
     Object(remax_wechat__WEBPACK_IMPORTED_MODULE_0__["login"])().then(function (res) {
-      Object(_services_auth__WEBPACK_IMPORTED_MODULE_1__["loginByWeixin"])({
+      Object(_services_auth__WEBPACK_IMPORTED_MODULE_1__["loginByWeixin"])(_objectSpread({
         code: res.code
-      }).then(function (loginRes) {
-        Object(remax_wechat__WEBPACK_IMPORTED_MODULE_0__["setStorageSync"])('session', loginRes.session);
+      }, userInfo)).then(function (loginRes) {
+        console.log(getSessionid(loginRes));
+        Object(remax_wechat__WEBPACK_IMPORTED_MODULE_0__["setStorageSync"])('sessionid', getSessionid(loginRes));
         resolve(loginRes);
       });
     }).catch(function (err) {
-      return reject(err);
+      console.log(err);
+      reject(err);
     });
   });
 }
