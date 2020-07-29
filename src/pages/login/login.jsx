@@ -1,6 +1,6 @@
 import React from 'react'
 import { View, Button, login, checkSession, navigateBack, getStorageSync } from 'remax/wechat';
-import { checkLogin, loginByWexin } from '../../utils/user'
+import { checkLogin, loginByWexin,xx } from '../../utils/user'
 import { set as setGlobalData, get as getGlobalData } from '../../global_data';
 
 export default function Login(
@@ -33,7 +33,8 @@ export default function Login(
   const handleSearch = () => {
     console.log('search')
     console.log(getGlobalData('hasLogin'))
-    console.log(getStorageSync(''))
+    console.log('sessionid',getStorageSync('sessionid'))
+    console.log(xx(6))
   }
   return (
     <>

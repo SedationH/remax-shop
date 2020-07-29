@@ -1,16 +1,6 @@
 import { setStorageSync, getStorageSync, checkSession, login } from 'remax/wechat';
-import { loginByWeixin } from '../services/auth';
-
-function getSessionid(loginRes) {
-  const cookie = loginRes.cookies[0]
-  const index = cookie.indexOf('sessionid') + 'sessionid'.length + 1
-  let sessionid = ''
-  for (let i = index; i < cookie.length; i++) {
-    if (cookie[i] === ';' || sessionid[i] === ' ') break
-    sessionid += cookie[i]
-  }
-  return sessionid
-}
+import { loginByWeixin, xxx } from '../services/auth';
+import { getCookie } from './utils'
 
 /**
  * 判断用户是否登陆
@@ -32,24 +22,27 @@ export function checkLogin() {
  * 微信登陆
  */
 export function loginByWexin(userInfo) {
-  return new Promise((resolve, reject) => {
-    login()
-      .then((res) => {
-        loginByWeixin({
-          code: res.code,
-          ...userInfo
-        })
-          .then(
-            loginRes => {
-              console.log(getSessionid(loginRes))
-              setStorageSync('sessionid', getSessionid(loginRes))
-              resolve(loginRes)
-            }
-          )
+  return new Promise(async (resolve, reject) => {
+    try {
+      const { code } = await login()
+      const loginRes = await loginByWeixin({
+        code,
+        ...userInfo
       })
-      .catch(err => {
-        console.log(err)
-        reject(err)
-      })
+      const sessionid = getCookie(loginRes, 'sessionid')
+      console.log(1)
+      setStorageSync('sessionid', sessionid)
+      resolve(true)
+    } catch (error) {
+      reject(error)
+    }
   })
+}
+
+export function xx() {
+  xxx({
+    id: 6
+  }).then(
+    res => console.log(res)
+  )
 }

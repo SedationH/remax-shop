@@ -99,7 +99,8 @@ function _Login() {
   var handleSearch = function handleSearch() {
     console.log('search');
     console.log(Object(_global_data__WEBPACK_IMPORTED_MODULE_4__["get"])('hasLogin'));
-    console.log(Object(remax_wechat__WEBPACK_IMPORTED_MODULE_2__["getStorageSync"])(''));
+    console.log('sessionid', Object(remax_wechat__WEBPACK_IMPORTED_MODULE_2__["getStorageSync"])('sessionid'));
+    console.log(Object(_utils_user__WEBPACK_IMPORTED_MODULE_3__["xx"])(6));
   };
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(remax_wechat__WEBPACK_IMPORTED_MODULE_2__["Button"], {

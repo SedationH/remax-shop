@@ -13650,7 +13650,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _remax_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @remax/runtime */ "./node_modules/@remax/runtime/esm/index.js");
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(_remax_runtime__WEBPACK_IMPORTED_MODULE_0__["createNativeComponent"])('index8'));
+/* harmony default export */ __webpack_exports__["default"] = (Object(_remax_runtime__WEBPACK_IMPORTED_MODULE_0__["createNativeComponent"])('index3'));
 
 /***/ }),
 
@@ -33945,8 +33945,9 @@ module.exports = function (module) {
 __webpack_require__.r(__webpack_exports__);
 var apiRoot = 'http://106.15.75.118/api/';
 /* harmony default export */ __webpack_exports__["default"] = ({
-  AuthLoginByWeixin: apiRoot + 'account/login' //微信登录
-
+  AuthLoginByWeixin: apiRoot + 'account/login',
+  //微信登录
+  xxx: apiRoot + 'account'
 });
 
 /***/ }),
@@ -33976,12 +33977,13 @@ function get(key) {
 /*!******************************!*\
   !*** ./src/services/auth.js ***!
   \******************************/
-/*! exports provided: loginByWeixin */
+/*! exports provided: loginByWeixin, xxx */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "loginByWeixin", function() { return loginByWeixin; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "xxx", function() { return xxx; });
 /* harmony import */ var regenerator_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! regenerator-runtime */ "./node_modules/regenerator-runtime/runtime.js");
 /* harmony import */ var regenerator_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(regenerator_runtime__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _utils_request__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/request */ "./src/utils/request.js");
@@ -34017,6 +34019,28 @@ function _loginByWeixin() {
   return _loginByWeixin.apply(this, arguments);
 }
 
+function xxx(_x2) {
+  return _xxx.apply(this, arguments);
+}
+
+function _xxx() {
+  _xxx = _asyncToGenerator( /*#__PURE__*/regenerator_runtime__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee2(payload) {
+    return regenerator_runtime__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee2$(_context2) {
+      while (1) {
+        switch (_context2.prev = _context2.next) {
+          case 0:
+            return _context2.abrupt("return", _utils_request__WEBPACK_IMPORTED_MODULE_1__["default"].get(_config_api__WEBPACK_IMPORTED_MODULE_2__["default"].xxx, payload));
+
+          case 1:
+          case "end":
+            return _context2.stop();
+        }
+      }
+    }, _callee2);
+  }));
+  return _xxx.apply(this, arguments);
+}
+
 /***/ }),
 
 /***/ "./src/utils/request.js":
@@ -34030,15 +34054,29 @@ function _loginByWeixin() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return request; });
 /* harmony import */ var remax_wechat__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! remax/wechat */ "./node_modules/remax/wechat.js");
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./utils */ "./src/utils/utils.js");
 
+
+
+function assemblyCookies() {
+  console.log(Object(remax_wechat__WEBPACK_IMPORTED_MODULE_0__["getStorageSync"])('sessionid'));
+  return "sessionid=".concat(Object(remax_wechat__WEBPACK_IMPORTED_MODULE_0__["getStorageSync"])('sessionid'));
+}
 /**
  * 封装微信提供的request
  * 拦截加入验证身份
  */
 
+
 function request(url) {
   var data = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
   var method = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 'GET';
+
+  if (method === 'GET') {
+    url += Object(_utils__WEBPACK_IMPORTED_MODULE_1__["serialize"])(data);
+  }
+
+  console.log(url);
   return new Promise(function (resolve, reject) {
     Object(remax_wechat__WEBPACK_IMPORTED_MODULE_0__["request"])({
       url: url,
@@ -34046,7 +34084,7 @@ function request(url) {
       method: method,
       header: {
         'Content-Type': 'application/json',
-        'sessionid': Object(remax_wechat__WEBPACK_IMPORTED_MODULE_0__["getStorageSync"])('sessionid')
+        'cookie': assemblyCookies()
       }
     }).then(function (res) {
       if (res.statusCode === 200) {
@@ -34074,46 +34112,43 @@ request.post = function (url, data) {
 /*!***************************!*\
   !*** ./src/utils/user.js ***!
   \***************************/
-/*! exports provided: checkLogin, loginByWexin */
+/*! exports provided: checkLogin, loginByWexin, xx */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "checkLogin", function() { return checkLogin; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "loginByWexin", function() { return loginByWexin; });
-/* harmony import */ var remax_wechat__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! remax/wechat */ "./node_modules/remax/wechat.js");
-/* harmony import */ var _services_auth__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../services/auth */ "./src/services/auth.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "xx", function() { return xx; });
+/* harmony import */ var regenerator_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! regenerator-runtime */ "./node_modules/regenerator-runtime/runtime.js");
+/* harmony import */ var regenerator_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(regenerator_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var remax_wechat__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! remax/wechat */ "./node_modules/remax/wechat.js");
+/* harmony import */ var _services_auth__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../services/auth */ "./src/services/auth.js");
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./utils */ "./src/utils/utils.js");
+
+
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
 
 
-function getSessionid(loginRes) {
-  var cookie = loginRes.cookies[0];
-  var index = cookie.indexOf('sessionid') + 'sessionid'.length + 1;
-  var sessionid = '';
 
-  for (var i = index; i < cookie.length; i++) {
-    if (cookie[i] === ';' || sessionid[i] === ' ') break;
-    sessionid += cookie[i];
-  }
-
-  return sessionid;
-}
 /**
  * 判断用户是否登陆
  * 登陆是否仍然有效
  */
 
-
 function checkLogin() {
   return new Promise(function (resolve, reject) {
-    if (Object(remax_wechat__WEBPACK_IMPORTED_MODULE_0__["getStorageSync"])('userInfo') && Object(remax_wechat__WEBPACK_IMPORTED_MODULE_0__["getStorageSync"])('sessionid')) {
-      Object(remax_wechat__WEBPACK_IMPORTED_MODULE_0__["checkSession"])().then(function () {
+    if (Object(remax_wechat__WEBPACK_IMPORTED_MODULE_1__["getStorageSync"])('userInfo') && Object(remax_wechat__WEBPACK_IMPORTED_MODULE_1__["getStorageSync"])('sessionid')) {
+      Object(remax_wechat__WEBPACK_IMPORTED_MODULE_1__["checkSession"])().then(function () {
         resolve(true);
       }).catch(function () {
         return reject(false);
@@ -34128,20 +34163,85 @@ function checkLogin() {
  */
 
 function loginByWexin(userInfo) {
-  return new Promise(function (resolve, reject) {
-    Object(remax_wechat__WEBPACK_IMPORTED_MODULE_0__["login"])().then(function (res) {
-      Object(_services_auth__WEBPACK_IMPORTED_MODULE_1__["loginByWeixin"])(_objectSpread({
-        code: res.code
-      }, userInfo)).then(function (loginRes) {
-        console.log(getSessionid(loginRes));
-        Object(remax_wechat__WEBPACK_IMPORTED_MODULE_0__["setStorageSync"])('sessionid', getSessionid(loginRes));
-        resolve(loginRes);
-      });
-    }).catch(function (err) {
-      console.log(err);
-      reject(err);
-    });
+  return new Promise( /*#__PURE__*/function () {
+    var _ref = _asyncToGenerator( /*#__PURE__*/regenerator_runtime__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(resolve, reject) {
+      var _yield$login, code, loginRes, sessionid;
+
+      return regenerator_runtime__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+        while (1) {
+          switch (_context.prev = _context.next) {
+            case 0:
+              _context.prev = 0;
+              _context.next = 3;
+              return Object(remax_wechat__WEBPACK_IMPORTED_MODULE_1__["login"])();
+
+            case 3:
+              _yield$login = _context.sent;
+              code = _yield$login.code;
+              _context.next = 7;
+              return Object(_services_auth__WEBPACK_IMPORTED_MODULE_2__["loginByWeixin"])(_objectSpread({
+                code: code
+              }, userInfo));
+
+            case 7:
+              loginRes = _context.sent;
+              sessionid = Object(_utils__WEBPACK_IMPORTED_MODULE_3__["getCookie"])(loginRes, 'sessionid');
+              console.log(1);
+              Object(remax_wechat__WEBPACK_IMPORTED_MODULE_1__["setStorageSync"])('sessionid', sessionid);
+              resolve(true);
+              _context.next = 17;
+              break;
+
+            case 14:
+              _context.prev = 14;
+              _context.t0 = _context["catch"](0);
+              reject(_context.t0);
+
+            case 17:
+            case "end":
+              return _context.stop();
+          }
+        }
+      }, _callee, null, [[0, 14]]);
+    }));
+
+    return function (_x, _x2) {
+      return _ref.apply(this, arguments);
+    };
+  }());
+}
+function xx() {
+  Object(_services_auth__WEBPACK_IMPORTED_MODULE_2__["xxx"])({
+    id: 6
+  }).then(function (res) {
+    return console.log(res);
   });
+}
+
+/***/ }),
+
+/***/ "./src/utils/utils.js":
+/*!****************************!*\
+  !*** ./src/utils/utils.js ***!
+  \****************************/
+/*! exports provided: getCookie, serialize */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getCookie", function() { return getCookie; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "serialize", function() { return serialize; });
+function getCookie(response, key) {
+  var cookies = response.cookies[0]; // 以一行的开头或者空格作为开头
+
+  var reg = new RegExp("(^| )".concat(key, "=([^;]*)(;|$)"));
+  return cookies.match(reg)[2];
+}
+function serialize(data) {
+  var query = Object.keys(data).map(function (key) {
+    return data[key] && "".concat(encodeURIComponent(key), "=").concat(encodeURIComponent(data[key]));
+  }).join('&');
+  return "?".concat(query);
 }
 
 /***/ })
